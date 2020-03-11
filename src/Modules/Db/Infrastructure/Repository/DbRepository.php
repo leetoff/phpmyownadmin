@@ -3,11 +3,12 @@
 
 namespace src\Modules\Db\Infrastructure\Repository;
 
+use src\Core\Infrastructure\Repository\AbstractEntityRepository;
 use src\Modules\Db\Domain\Entity\DbTable;
 use src\Modules\Db\Domain\Repository\DbRepositoryInterface;
 use yii\db\Query;
 
-class DbRepository implements DbRepositoryInterface
+class DbRepository extends AbstractEntityRepository implements DbRepositoryInterface
 {
     public function findAll(): array
     {

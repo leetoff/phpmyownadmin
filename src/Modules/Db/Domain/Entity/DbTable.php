@@ -3,10 +3,10 @@
 
 namespace src\Modules\Db\Domain\Entity;
 
-
+use src\Core\Domain\Entity\AbstractAttributesEntity;
 use src\Core\Domain\Entity\EntityInterface;
 
-class DbTable implements EntityInterface
+class DbTable extends AbstractAttributesEntity implements EntityInterface
 {
     public const TABLE_NAME = 'db_table';
 
